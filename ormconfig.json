@@ -1,0 +1,39 @@
+[
+    {
+        "name": "default",
+        "type": "postgres",
+        "host": "localhost",
+        "port": 5432,
+        "username": "postgres",
+        "password": "postgres",
+        "database": "test",
+        "synchronize": true,
+        "logging": false,
+        "entities": [
+            "src/Interfaces/*.ts"
+        ],
+        "migrations": [
+            "src/Database/migration/**/*.ts"
+        ],
+        "cli": {
+            "entitiesDir": "src/Interfaces"
+        }
+    },
+    {
+        "name": "development",
+        "type": "postgres",
+        "host": "localhost",
+        "port": 5432,
+        "username": "postgres",
+        "password": "postgres",
+        "database": "test",
+        "synchronize": true,
+        "logging": false,
+        "entities": [
+            "src/Interfaces/*.ts"
+        ],
+        "cli": {
+            "entitiesDir": "src/Interfaces"
+        }
+    }
+]
